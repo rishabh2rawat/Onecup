@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "686982424223",
+    "firebase_url": "https://onecup-ace53.firebaseio.com",
+    "project_id": "onecup-ace53",
+    "storage_bucket": "onecup-ace53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686982424223:android:13e5470f034fbe7d",
+        "android_client_info": {
+          "package_name": "com.rishabhrawat.fightforhunger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686982424223-002ficf5h79rruujqrdmn28hnhirb6rd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rishabhrawat.fightforhunger",
+            "certificate_hash": "882cf955f00174a4fa8f8490d7bc7393327e04a4"
+          }
+        },
+        {
+          "client_id": "686982424223-uvsqfmikua8mjkr01kdjltu3ie53dops.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3QhBKxW55wnS6mY-gaJtgct_5XVTfmFs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686982424223-uvsqfmikua8mjkr01kdjltu3ie53dops.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
