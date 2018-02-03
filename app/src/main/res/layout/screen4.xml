@@ -14,9 +14,9 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="160dp"
-            android:layout_height="157dp"
-            android:src="@drawable/ris" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/main4" />
 
 
     </LinearLayout>
@@ -32,7 +32,7 @@
         android:layout_marginTop="59dp"
         android:gravity="center"
 
-        android:text="Welcome To DEVLight"
+        android:text="Welcome To OneCup"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="32sp" />
@@ -44,10 +44,10 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/linearLayout"
         android:layout_marginTop="85dp"
-        android:text="Get Light In Devlight"
+        android:text="Fight against Hunger"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        android:textSize="20sp" />
+        android:textSize="30sp" />
 
 
 </RelativeLayout>
