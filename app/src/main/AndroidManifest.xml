@@ -29,7 +29,7 @@
             android:name=".indexActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".registerActivity"
-
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             />
         <activity
             android:name=".donerActivity"
