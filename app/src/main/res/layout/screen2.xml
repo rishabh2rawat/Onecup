@@ -30,7 +30,7 @@
 
         android:layout_alignParentTop="true"
         android:layout_marginTop="59dp"
-        android:text="Explore what others have Devloped"
+        android:text="Your food is too valuable to be wasted"
 
         android:textAlignment="center"
         android:textColor="@android:color/white"

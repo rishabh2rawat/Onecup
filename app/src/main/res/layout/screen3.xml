@@ -30,7 +30,7 @@
 
         android:layout_alignParentTop="true"
         android:layout_marginTop="59dp"
-        android:text="Give and Get Review Comment and Suggesion"
+        android:text="makes donating food fast, easy, and lucrative"
 
         android:textAlignment="center"
         android:textColor="@android:color/white"
