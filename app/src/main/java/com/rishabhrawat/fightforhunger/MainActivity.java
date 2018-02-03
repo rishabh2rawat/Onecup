@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             intromanager.setFirst(false);
-            Intent intent = new Intent(MainActivity.this, indexActivity.class);
+            Intent intent = new Intent(MainActivity.this, registerActivity.class);
             startActivity(intent);
             finish();
         }
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, indexActivity.class);
+                Intent intent = new Intent(MainActivity.this, registerActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 if (current < layouts.length) {
                     viewPager.setCurrentItem(current);
                 } else {
-                    Intent intent = new Intent(MainActivity.this, indexActivity.class);
+                    Intent intent = new Intent(MainActivity.this, registerActivity.class);
                     startActivity(intent);
                     finish();
                 }
