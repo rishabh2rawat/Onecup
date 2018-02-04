@@ -42,7 +42,7 @@ public class distributerActivity extends AppCompatActivity {
 
         /*load data from firebase server*/
 
-        reference.addValueEventListener(new ValueEventListener() {
+       /* reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
@@ -54,7 +54,7 @@ public class distributerActivity extends AppCompatActivity {
 
             }
         });
-
+*/
         for (int i = 0; i < 10; i++) {
 
             donerdata donerdata = new donerdata("https://firebasestorage.googleapis.com/v0/b/onecup-ace53.appspot.com/o/All_Image_Uploads%2F1.jpg?alt=media&token=c6f8bd13-80c2-444d-a8a8-947a9ae257fe","Rishabh rawat","9557624276","greater noida","50men servings");
