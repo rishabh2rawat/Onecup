@@ -20,7 +20,6 @@ import android.os.Bundle;
 import android.support.v7.widget.AppCompatMultiAutoCompleteTextView;
 import android.support.v7.widget.AppCompatSpinner;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -57,11 +56,12 @@ public class donerActivity extends AppCompatActivity {
 
     String name;
     String email;
-    Uri photoUrl;
+    Uri photoUri;
     String uid;
     String phoneno;
 
     EditText desc;
+    TextView confirm;
 
     EditText entername, mobileno;
 
@@ -90,6 +90,7 @@ public class donerActivity extends AppCompatActivity {
         entername = (EditText) findViewById(R.id.entername);
         mobileno = (EditText) findViewById(R.id.mobile);
         desc=(EditText) findViewById(R.id.desc);
+        confirm=(TextView)findViewById(R.id.confirm_image);
         progressDialog = new ProgressDialog(donerActivity.this);
 
 
@@ -101,7 +102,7 @@ public class donerActivity extends AppCompatActivity {
             // Name, email address, and profile photo Url
             name = user.getDisplayName();
             email = user.getEmail();
-            photoUrl = user.getPhotoUrl();
+            photoUri = user.getPhotoUrl();
             uid = user.getUid();
             phoneno = user.getPhoneNumber();
         }
@@ -115,17 +116,26 @@ public class donerActivity extends AppCompatActivity {
                 selectImage();
             }
         });
-        /*----------------next btn text view onclick listner------------------------------------------------*/
-        next.setOnClickListener(new View.OnClickListener() {
+
+        /*-------------------------confirm on click-------------------------------*/
+        confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 storageReference = FirebaseStorage.getInstance().getReference();
                 if (thumbnail != null && mobileno!=null && desc!=null) {
                     UploadImageFileToFirebaseStorage();
                 } else {
                     Toast.makeText(donerActivity.this, "first take a profile photo and compleate all details", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        /*----------------next btn text view onclick listner------------------------------------------------*/
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
                 /*update firebase*/
 
                 reference.child("data").child("donor").child(uid).child("description").setValue(desc.getText().toString());

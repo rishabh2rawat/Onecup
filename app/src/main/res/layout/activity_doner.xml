@@ -109,6 +109,16 @@
                 android:src="@drawable/add1"
                 />
 
+            <TextView
+                android:id="@+id/confirm_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm image"
+                android:textAlignment="center"
+                android:textColor="#5a68e7"
+                android:textStyle="bold"
+                />
+
         </LinearLayout>
 
     </RelativeLayout>
